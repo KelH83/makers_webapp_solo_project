@@ -1,0 +1,182 @@
+h1 {
+    color: rgb(78, 78, 172);
+    text-align: center;
+    font-size: 3rem;
+    margin: 15 auto;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.peep {
+    display: flex;
+    flex-direction: column;
+    height: 20vh; 
+    width: 50vw;
+    background-color: aliceblue;
+    border: 3px solid black;
+    border-radius: 6px;
+    margin: 10px auto;
+}
+
+.box {
+    padding: 5px;
+}
+
+.user-name, .real-name{
+    display:flex;
+    flex: 1; 
+    background-color: rgb(78, 78, 172);
+    color: white;
+    font-size: 15px;
+}
+
+.timestamp {
+    display:flex;
+    flex: 1; 
+    background-color: rgb(78, 78, 172);
+    color: white;
+    font-size: 15px;
+}
+
+.content {
+    flex: 1.25; 
+    background-color: #e5c4f5; 
+    font-size: 22px;
+    text-align: center;
+    padding: 12px;
+}
+
+.bird-img{
+    width:100px;
+    height: 100px;
+}
+
+.navbar {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgb(78, 78, 172); 
+    padding: 5px; 
+    border-radius: 5px; 
+    width: 200px; 
+    margin: 20px auto; 
+}
+
+.nav-item {
+    color: white; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+
+.nav-item:hover {
+    background-color: #e5c4f5; 
+    border-radius: 15px;
+    color: rgb(78, 78, 172);
+}
+
+.login .logout{
+    border-right: 1px solid #fff; 
+}
+
+.login a{
+    color: white;
+    text-decoration: none;
+}
+
+.signup a{
+    color: white;
+    text-decoration: none;
+}
+
+.logout a{
+    color: white;
+    text-decoration: none;
+}
+
+.signup .make-peep{
+    border-right: none; 
+}
+
+.make-peep a{
+    color: white;
+    text-decoration: none;
+}
+
+h2{
+    text-align: center;
+    color: rgb(78, 78, 172);
+}
+
+.peep-form{
+    display: flex; 
+    width: 50vw;
+    height: 30vh;
+    background-color: #e5c4f5; 
+    font-size: 22px;
+    text-align: center;
+    padding: 12px; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin: auto;
+    border: 2px solid rgb(78, 78, 172);
+    border-radius: 8px;
+    color: rgb(78, 78, 172);
+    font-size: 25px;
+}
+
+.peep-form-button{
+    background-color: rgb(78, 78, 172);
+    color: white;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.peep-form-button:hover{
+    background-color: white;
+    color: rgb(78, 78, 172);
+    font-size: 25px;
+    border-radius: 8px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.signup-form{
+    display: flex; 
+    width: 50vw;
+    height: 60vh;
+    background-color: #e5c4f5; 
+    font-size: 22px;
+    text-align: center;
+    padding: 12px; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin: auto;
+    border: 2px solid rgb(78, 78, 172);
+    border-radius: 8px;
+    color: rgb(78, 78, 172);
+    font-size: 25px;
+}
+
+.signup-form-button{
+    background-color: rgb(78, 78, 172);
+    color: white;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.signup-form-button:hover{
+    background-color: white;
+    color: rgb(78, 78, 172);
+    font-size: 25px;
+    border-radius: 8px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}

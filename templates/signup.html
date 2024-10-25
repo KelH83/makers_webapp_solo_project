@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Create account</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="nav-item login"><a href ='/'>Home</a></div>
+</div>
+<h1><img class="bird-img" src="../static/chitter_bird.png" alt="A cartoon purple bird"/>Welcome to Chitter</h1>
+<h2>Sign up for an account</h2>
+<form action="/signup" method="post" class="signup-form">
+
+    {% if errors %}
+        <p class="t-errors">
+        There were errors with your submission: {{ errors }}
+        </p>
+    {% endif %}
+
+    <p>
+        <label for="username">User name</label>
+
+        <input type="text" name="username" id="username">
+    </p>
+    <p>
+        <label for="full_name">Real name</label>
+        <input type="text" name="full_name" id="full_name">
+    </p>
+
+    <p>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+    </p>
+
+    <p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+    </p>
+
+    <p>
+        <input class="signup-form-button"type="submit" value="Sign me up">
+    </p>
+    </form>
+</body>
+</html>

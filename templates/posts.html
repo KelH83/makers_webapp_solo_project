@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chitter Posts</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-item login"><a href ='/logged'>Login</a></div>
+      <div class="nav-item signup"><a href ='/signup'>Sign Up</a></div>
+  </div>
+    <h1><img class="bird-img" src="../static/chitter_bird.png" alt="A cartoon purple bird"/>Welcome to Chitter</h1>
+    {% for item in return_list %}
+    <div class="peep">
+      <div class="top">
+        <div class="box user-name"><b>Username:</b> {{item.user_name}}
+        <div class="box real-name"></div><b>Real name:</b> {{item.full_name}}<br></div>
+      </div>
+      <div class="box content">{{item.content}}</div>
+      <div class="box timestamp"><b>Peeped at:</b> {{item.post_time}}<br></div>
+    </div>
+<br>
+{% endfor %}
+  </body>
+</html>

@@ -1,36 +1,73 @@
-# Flask HTML Web & Database Project Starter
+# Chitter Challenge
 
-This is a starter project for you to use to start your Flask HTML web & database
-projects.
+# User Stories
+STRAIGHT UP
 
-It contains quite a lot of example code. You can use this to see how the various
-parts of the project work, or you can delete it and start from scratch.
+As a Maker
+So that I can let people know what I am doing
+I want to post a message (peep) to chitter
+POSTS > add > content, user
 
-There are two videos to support:
+As a maker
+So that I can see what others are saying
+I want to see all peeps in reverse chronological order
+POSTS > view(reverse chronological)
 
-* [A demonstration of setting up the project](https://www.youtube.com/watch?v=YStsRfMVx44&t=0s)
-* [A walkthrough of the project codebase](https://www.youtube.com/watch?v=YStsRfMVx44&t=314s)
+As a Maker
+So that I can better appreciate the context of a peep
+I want to see the time at which it was made
+POSTS > view(timestamp)
+
+As a Maker
+So that I can post messages on Chitter as me
+I want to sign up for Chitter
+USERS > add > email >password > name > username
+
+HARDER
+
+As a Maker
+So that only I can post messages on Chitter as me
+I want to log in to Chitter
+USERS > Login
+
+As a Maker
+So that I can avoid others posting messages on Chitter as me
+I want to log out of Chitter
+USERS > logout
+
+ADVANCED
+
+As a Maker
+So that I can stay constantly tapped in to the shouty box of Chitter
+I want to receive an email if I am tagged in a Peep
+
+USERS > email notificaiton
+
+# Additional Notes
+You don't have to be logged in to see the peeps.
+
+Users sign up to chitter with their email, password, name and a username (e.g. samm@makersacademy.com, password123, Sam Morgan, sjmog).
+
+The username and email are unique.
+
+Peeps (posts to chitter) have the name of the user and their user handle.
+
 
 ## Setup
 
 ```shell
-# Clone the repository to your local machine
-; git clone git@github.com:makersacademy/web-applications-in-python-project-starter-html.git YOUR_PROJECT_NAME
-
-# Or, if you don't have SSH keys set up
-; git clone https://github.com/makersacademy/web-applications-in-python-project-starter-html.git YOUR_PROJECT_NAME
 
 # Enter the directory
 ; cd YOUR_PROJECT_NAME
 
 # Set up the virtual environment
-; python -m venv html-application-starter-venv
+; python -m venv solo_venv
 
 # Activate the virtual environment
-; source html-application-starter-venv/bin/activate 
+; source solo_venv/bin/activate 
 
 # Install dependencies
-(html-application-starter-venv); pip install -r requirements.txt
+(solo_venv); pip install -r requirements.txt
 # Read below if you see an error with `python_full_version`
 
 # Install the virtual browser we will use for testing
@@ -38,20 +75,22 @@ There are two videos to support:
 # If you encounter problems at this stage please contact your coach
 
 # Create a test and development database
-(html-application-starter-venv); createdb YOUR_PROJECT_NAME
-(html-application-starter-venv); createdb YOUR_PROJECT_NAME_test
+(solo_venv); createdb YOUR_PROJECT_NAME
+(solo_venv); createdb YOUR_PROJECT_NAME_test
 
 # Open lib/database_connection.py and change the database name to YOUR_PROJECT_NAME
-(html-application-starter-venv); open lib/database_connection.py
+(solo_venv); open lib/database_connection.py
 
 # Seed the development database
-(html-application-starter-venv); python seed_dev_database.py
+(solo_venv); python seed_dev_database.py
 
-# Run the tests (with extra logging) - see below if you have any issues
-(html-application-starter-venv); pytest -sv
+# WRITE SOME TESTS
+
+# Run the tests (with extra logging) 
+(solo_venv); pytest -sv
 
 # Run the app
-(html-application-starter-venv); python app.py
+(solo_venv); python app.py
 # Now visit http://localhost:5001/emoji in your browser
 ```
 

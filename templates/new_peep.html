@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Add Peep</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="nav-item logout"><a href ='/'>Logout</a></div>
+    <div class="nav-item make-peep">Peep</div>
+</div>
+<h1><img class="bird-img" src="../static/chitter_bird.png" alt="A cartoon purple bird"/>Welcome to Chitter</h1>
+<h2>Create a Peep</h2>
+<form action="/peep" method="post" class="peep-form">
+
+    {% if errors %}
+        <p class="t-errors">
+        There were errors with your submission: {{ errors }}
+        </p>
+    {% endif %}
+
+    <p>
+        <label for="username">User name</label>
+
+        <input type="text" name="username" id="username">
+    </p>
+    <p>
+        <label for="content">Peep</label>
+        <input type="text" name="content" id="content">
+    </p>
+
+    <p>
+        <input class="peep-form-button"type="submit" value="Send Peep">
+    </p>
+    </form>
+</body>
+</html>
